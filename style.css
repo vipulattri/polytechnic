@@ -81,10 +81,10 @@ nav {
 nav h3 {
     display: none;
 }
-#main img{
+
+#main img {
     height: 10vh;
     border-radius: 50%;
-    
 }
 
 #content {
@@ -127,4 +127,69 @@ nav h3 {
 p {
     color: white;
     font-size: 20px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+    #content h1 {
+        font-size: 12vh;
+    }
+    
+    #content h2 {
+        font-size: 4vh;
+    }
+    
+    #content li {
+        font-size: 1.2vw;
+    }
+    
+    p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 992px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #nav-part2 {
+        flex-direction: column;
+        width: 100%;
+        align-items: stretch;
+    }
+
+    #nav-part2 h4 {
+        text-align: center;
+        width: 100%;
+    }
+
+    #content {
+        height: auto; /* Allow content to grow */
+        padding: 20px; /* Add some padding */
+        transform: translate(0, 0); /* Reset transformation */
+    }
+
+    #content h1 {
+        font-size: 10vh;
+    }
+}
+
+@media (max-width: 768px) {
+    #content h1 {
+        font-size: 8vh;
+    }
+
+    #content h2 {
+        font-size: 3.5vh;
+    }
+
+    #content li {
+        font-size: 4vw; /* Increase size for smaller screens */
+    }
+
+    p {
+        font-size: 16px;
+    }
 }
